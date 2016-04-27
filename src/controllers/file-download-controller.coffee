@@ -5,8 +5,11 @@ class FileDownloadController
 
   download: (req, res) =>
     {uri, fileName} = req.query
-    res.setHeader 'content-disposition', "filename=#{fileName}" if fileName?
-    stream = request.get uri
-    stream.pipe res
+    disposition = "attachment; filename=#{fileName}"
+    request
+      .get uri
+      .on 'response', (response) =>
+        response.headers['content-disposition'] = disposition;
+      .pipe res
 
 module.exports = FileDownloadController
