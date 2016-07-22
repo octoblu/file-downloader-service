@@ -6,17 +6,26 @@
 
 [![NPM](https://nodei.co/npm/file-downloader-service.svg?style=flat)](https://npmjs.org/package/file-downloader-service)
 
-## Installing
+## Routes
 
-```bash
-$ npm install file-downloader-service
-```
+### **GET** /download
 
-### Usage
+Query:
+* url:
+  - The URL of the file to download.
+* fileName:
+  - Override the content-disposition with a fileName
 
-```javascript
-console.log('hello world!');
-```
+Download from url and override content-disposition (filename).
+
+### **GET** /github-release/:owner/:repo/:tag/:asset
+
+Query:
+* fileName:
+  - Override the content-disposition with a fileName
+
+Download from url and override content-disposition (filename).
+
 
 ## License
 
