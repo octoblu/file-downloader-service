@@ -1,6 +1,6 @@
 {
   "name": "file-downloader-service",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "Download file service",
   "keywords": [],
   "homepage": "https://github.com/octoblu/file-download",
@@ -41,7 +41,7 @@
     "express-send-error": "^1.1.0",
     "lodash": "^4.13.1",
     "morgan": "^1.6.1",
-    "octoblu-raven": "^3.0.4",
+    "octoblu-raven": "^3.0.5",
     "request": "^2.69.0",
     "server-destroy": "^1.0.1"
   },
