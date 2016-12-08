@@ -1,0 +1,50 @@
+{
+  "tags": {
+    "v2.0.0": {
+      "tag": "v2.0.0",
+      "assets": [
+        {
+          "name": "MeshbluConnectorInstaller-2.0.0.dmg"
+        },
+        {
+          "name": "MeshbluConnectorInstaller-2.0.0-win.zip"
+        },
+        {
+          "name": "MeshbluConnectorInstaller-2.0.0-ia32-win.zip"
+        },
+        {
+          "name": "electron-meshblu-connector-installer-2.0.0.zip"
+        },
+        {
+          "name": "electron-meshblu-connector-installer-2.0.0-ia32.zip"
+        },
+        {
+          "name": "electron-meshblu-connector-installer-2.0.0-armv7l.zip"
+        }
+      ]
+    },
+    "v1.0.0": {
+      "tag": "v1.0.0",
+      "assets": [
+        {
+          "name": "MeshbluConnectorInstaller-darwin-amd64.dmg"
+        },
+        {
+          "name": "MeshbluConnectorInstaller-linux-386.zip"
+        },
+        {
+          "name": "MeshbluConnectorInstaller-linux-amd64.zip"
+        },
+        {
+          "name": "MeshbluConnectorInstaller-linux-arm.zip"
+        },
+        {
+          "name": "MeshbluConnectorInstaller-windows-386.zip"
+        },
+        {
+          "name": "MeshbluConnectorInstaller-windows-amd64.zip"
+        }
+      ]
+    }
+  }
+}
