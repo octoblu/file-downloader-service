@@ -1,50 +1,123 @@
 {
-  "tags": {
-    "v2.0.0": {
-      "tag": "v2.0.0",
-      "assets": [
-        {
-          "name": "MeshbluConnectorInstaller-2.0.0.dmg"
-        },
-        {
-          "name": "MeshbluConnectorInstaller-2.0.0-win.zip"
-        },
-        {
-          "name": "MeshbluConnectorInstaller-2.0.0-ia32-win.zip"
-        },
-        {
-          "name": "electron-meshblu-connector-installer-2.0.0.zip"
-        },
-        {
-          "name": "electron-meshblu-connector-installer-2.0.0-ia32.zip"
-        },
-        {
-          "name": "electron-meshblu-connector-installer-2.0.0-armv7l.zip"
-        }
-      ]
-    },
-    "v1.0.0": {
-      "tag": "v1.0.0",
-      "assets": [
-        {
-          "name": "MeshbluConnectorInstaller-darwin-amd64.dmg"
-        },
-        {
-          "name": "MeshbluConnectorInstaller-linux-386.zip"
-        },
-        {
-          "name": "MeshbluConnectorInstaller-linux-amd64.zip"
-        },
-        {
-          "name": "MeshbluConnectorInstaller-linux-arm.zip"
-        },
-        {
-          "name": "MeshbluConnectorInstaller-windows-386.zip"
-        },
-        {
-          "name": "MeshbluConnectorInstaller-windows-amd64.zip"
-        }
-      ]
-    }
+  "v2.0.2-draft": {
+    "tag": "v2.0.2-draft",
+    "prerelease": false,
+    "draft": true,
+    "assets": [
+      {
+        "name": "MeshbluConnectorInstaller-2.0.2-draft.dmg"
+      },
+      {
+        "name": "MeshbluConnectorInstaller-2.0.2-draft-win.zip"
+      },
+      {
+        "name": "MeshbluConnectorInstaller-2.0.2-draft-ia32-win.zip"
+      },
+      {
+        "name": "electron-meshblu-connector-installer-2.0.2-draft.zip"
+      },
+      {
+        "name": "electron-meshblu-connector-installer-2.0.2-draft-ia32.zip"
+      },
+      {
+        "name": "electron-meshblu-connector-installer-2.0.2-draft-armv7l.zip"
+      }
+    ]
+  },
+  "v2.0.1-pre": {
+    "tag": "v2.0.1-pre",
+    "prerelease": true,
+    "draft": false,
+    "assets": [
+      {
+        "name": "MeshbluConnectorInstaller-2.0.1-pre.dmg"
+      },
+      {
+        "name": "MeshbluConnectorInstaller-2.0.1-pre-win.zip"
+      },
+      {
+        "name": "MeshbluConnectorInstaller-2.0.1-pre-ia32-win.zip"
+      },
+      {
+        "name": "electron-meshblu-connector-installer-2.0.1-pre.zip"
+      },
+      {
+        "name": "electron-meshblu-connector-installer-2.0.1-pre-ia32.zip"
+      },
+      {
+        "name": "electron-meshblu-connector-installer-2.0.1-pre-armv7l.zip"
+      }
+    ]
+  },
+  "v2.0.0": {
+    "tag": "v2.0.0",
+    "prerelease": false,
+    "draft": false,
+    "assets": [
+      {
+        "name": "MeshbluConnectorInstaller-2.0.0.dmg"
+      },
+      {
+        "name": "MeshbluConnectorInstaller-2.0.0-win.zip"
+      },
+      {
+        "name": "MeshbluConnectorInstaller-2.0.0-ia32-win.zip"
+      },
+      {
+        "name": "electron-meshblu-connector-installer-2.0.0.zip"
+      },
+      {
+        "name": "electron-meshblu-connector-installer-2.0.0-ia32.zip"
+      },
+      {
+        "name": "electron-meshblu-connector-installer-2.0.0-armv7l.zip"
+      }
+    ]
+  },
+  "v1.0.0": {
+    "tag": "v1.0.0",
+    "assets": [
+      {
+        "name": "MeshbluConnectorInstaller-darwin-amd64.dmg"
+      },
+      {
+        "name": "MeshbluConnectorInstaller-linux-386.zip"
+      },
+      {
+        "name": "MeshbluConnectorInstaller-linux-amd64.zip"
+      },
+      {
+        "name": "MeshbluConnectorInstaller-linux-arm.zip"
+      },
+      {
+        "name": "MeshbluConnectorInstaller-windows-386.zip"
+      },
+      {
+        "name": "MeshbluConnectorInstaller-windows-amd64.zip"
+      }
+    ]
+  },
+  "v0.9.0": {
+    "tag": "v0.9.0",
+    "assets": [
+      {
+        "name": "MeshbluConnectorInstaller-darwin-amd64.dmg"
+      },
+      {
+        "name": "MeshbluConnectorInstaller-linux-386.zip"
+      },
+      {
+        "name": "MeshbluConnectorInstaller-linux-amd64.zip"
+      },
+      {
+        "name": "MeshbluConnectorInstaller-linux-arm.zip"
+      },
+      {
+        "name": "MeshbluConnectorInstaller-windows-386.zip"
+      },
+      {
+        "name": "MeshbluConnectorInstaller-windows-amd64.zip"
+      }
+    ]
   }
 }

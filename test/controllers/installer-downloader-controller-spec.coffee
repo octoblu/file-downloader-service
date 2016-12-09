@@ -1,5 +1,9 @@
+_ = require 'lodash'
 InstallerDownloaderController = require '../../src/controllers/installer-downloader-controller'
 exampleTags = require './assets/example-electron-result.json'
+
+getExampleTags = =>
+  return _.cloneDeep(exampleTags)
 
 describe 'InstallerDownloaderController', ->
   beforeEach ->
@@ -17,9 +21,7 @@ describe 'InstallerDownloaderController', ->
       describe 'v2.0.0', ->
         beforeEach ->
           @results = []
-          tags = {
-            "v2.0.0": exampleTags.tags['v2.0.0']
-          }
+          tags = getExampleTags()
           for os in ['darwin', 'mac', 'macos', 'macosx', 'osx']
             @results.push @sut.getCorrectRelease({
               tags,
@@ -39,9 +41,8 @@ describe 'InstallerDownloaderController', ->
       describe 'v1.0.0', ->
         beforeEach ->
           @results = []
-          tags = {
-            "v1.0.0": exampleTags.tags['v1.0.0']
-          }
+          tags = getExampleTags()
+          delete tags['v2.0.0']
           for os in ['darwin', 'mac', 'macos', 'macosx', 'osx']
             @results.push @sut.getCorrectRelease({
               tags,
@@ -62,9 +63,7 @@ describe 'InstallerDownloaderController', ->
       describe 'v2.0.0', ->
         beforeEach ->
           @results = []
-          tags = {
-            "v2.0.0": exampleTags.tags['v2.0.0']
-          }
+          tags = getExampleTags()
           for os in ['windows', 'win']
             for arch in ['386', 'ia32', 'amd64', 'x64']
               @results.push @sut.getCorrectRelease({
@@ -88,9 +87,8 @@ describe 'InstallerDownloaderController', ->
       describe 'v1.0.0', ->
         beforeEach ->
           @results = []
-          tags = {
-            "v1.0.0": exampleTags.tags['v1.0.0']
-          }
+          tags = getExampleTags()
+          delete tags['v2.0.0']
           for os in ['windows', 'win']
             for arch in ['386', 'ia32', 'amd64', 'x64']
               @results.push @sut.getCorrectRelease({
@@ -115,9 +113,7 @@ describe 'InstallerDownloaderController', ->
       describe 'v2.0.0', ->
         beforeEach ->
           @results = []
-          tags = {
-            "v2.0.0": exampleTags.tags['v2.0.0']
-          }
+          tags = getExampleTags()
           for arch in ['386', 'ia32', 'amd64', 'x64', 'arm', 'armv7l']
             @results.push @sut.getCorrectRelease({
               tags,
@@ -138,9 +134,8 @@ describe 'InstallerDownloaderController', ->
       describe 'v1.0.0', ->
         beforeEach ->
           @results = []
-          tags = {
-            "v1.0.0": exampleTags.tags['v1.0.0']
-          }
+          tags = getExampleTags()
+          delete tags['v2.0.0']
           for arch in ['386', 'ia32', 'amd64', 'x64', 'arm', 'armv7l']
             @results.push @sut.getCorrectRelease({
               tags,
