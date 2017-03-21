@@ -57,9 +57,9 @@ class InstallerDownloaderController
     return if _.isEmpty assets
     for { name } in assets
       return { asset: name, tag } if is32(arch) and _.endsWith name, "-ia32-win.zip"
-      return { asset: name, tag } if is64(arch) and _.endsWith name, "-win.zip"
       return { asset: name, tag } if is32(arch) and _.endsWith name, "-windows-386.zip"
       return { asset: name, tag } if is64(arch) and _.endsWith name, "-windows-amd64.zip"
+      return { asset: name, tag } if is64(arch) and _.endsWith(name, "-win.zip") and !_.endsWith(name, "-ia32-win.zip")
 
   getAssetForLinux: ({ tag, assets }, { arch }) =>
     return if _.isEmpty assets

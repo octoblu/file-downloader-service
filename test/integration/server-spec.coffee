@@ -2,7 +2,7 @@ Server = require '../../src/server'
 
 describe 'Server', ->
   beforeEach ->
-    @sut = new Server { port: null }
+    @sut = new Server { port: 3000 }
 
   afterEach ->
     @sut.destroy()
